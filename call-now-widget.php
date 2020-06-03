@@ -1,16 +1,20 @@
 <?php
 /**
  * @package Call now widget
- * @version 1.1.0
+ * @version 1.0.0
  */
 /*
 Plugin Name: Call now widget
 Plugin URI: http://achaq.ir/plugins/call-now-widget/
-Description: this plugin give you a widget for create call now button.
+Description: this plugin give you a widget for create call now button and sms button ...
 Author: Hossein Raimi
-Version: 1.1.0
+Version: 1.0.0
 Author URI: http://achaq.ir/
 */
+
+define('CALL_NOW_WIDGET_VERSION', '1.0.0');
+define('CALL_NOW_WIDGET_DIR', plugin_dir_path(__FILE__));
+define('CALL_NOW_WIDGET_URL', plugins_url('/', __FILE__));
 
 function cnw_register_widget() {
 	
