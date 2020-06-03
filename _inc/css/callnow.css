@@ -1,4 +1,13 @@
 @media screen and (max-width:680px) {
+    /*-------------------sms------------------------*/
+    .sms-now-button {
+        display: flex !important;
+        background: transparent
+    }
+    .sms-now-button .call-text {
+        display: none;
+    }
+    /*-------------------sms end--------------------*/
     .call-now-button {
         display: flex !important;
         background: transparent
@@ -45,6 +54,54 @@
     text-decoration: none !important;
     box-sizing: border-box
 }
+
+
+
+/*-------------------sms------------------------*/
+.sms-now-button {
+    display: none
+}/*quick-call-button*/
+
+.sms-now-button {
+    display: none;
+    z-index: 9999;
+    clear: both;
+    margin: 0 auto;
+    position: fixed;
+    border-radius: 50px
+}
+
+.sms-now-button div {
+    display: flex
+}
+
+.sms-now-button div p {
+    color: #fff;
+    display: table;
+    padding: 10px;
+    border-radius: 21px;
+    height: 34px;
+    line-height: 14px;
+    font-size: 14px;
+    margin: 8px 5px 8px 50px;
+    text-transform: uppercase;
+    font-weight: normal;
+    text-align: center;
+    box-sizing: content-box;
+    text-decoration: none !important;
+    box-sizing: border-box
+}
+
+.sms-now-button .sms-img-circle {
+    background: url(sms.png) no-repeat center center;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+/*-------------------sms end--------------------*/
+
 
 .quick-alo-ph-circle {
     width: 130px;
