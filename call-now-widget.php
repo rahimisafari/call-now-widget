@@ -8,7 +8,7 @@ Plugin Name: Call now widget
 Plugin URI: http://achaq.ir/plugins/call-now-widget/
 Description: this plugin give you a widget for create call now button.
 Author: Hossein Raimi
-Version: 1.0.0
+Version: 1.1.0
 Author URI: http://achaq.ir/
 */
 
