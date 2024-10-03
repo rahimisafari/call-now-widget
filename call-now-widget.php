@@ -44,7 +44,7 @@ function cnw_register_widget() {
 	<div>
 		<div class="call-now-mobile">
 			<a href="tel:<?php echo $instance['callnumber'] ?>"
-				onclick="_gaq.push(['_trackEvent','call now widget','Click/Touch','<?php echo $instance['callnumber'] ?>',1]);"
+				onclick="gtag('event', 'call_now_click', {'event_category': 'engagement','event_label': '<?php echo $instance['callnumber'] ?>'});"
 				class="call-link" title="<?php echo $instance['calllinktitle'] ?>">
 				<p class="call-text"> <?php echo $instance['calltext']; ?> </p>
 
@@ -56,8 +56,7 @@ function cnw_register_widget() {
 
 
 		<div class="call-link-Desktop">
-			<a data-toggle="modal" data-target="#exampleModal"
-				onclick="_gaq.push(['_trackEvent','call now widget','Click/Touch','<?php echo $instance['callnumber'] ?>',1]);"
+			<a onclick="gtag('event', 'call_now_click', {'event_category': 'engagement','event_label': '<?php echo $instance['callnumber'] ?>'});"
 				class="call-link" title="<?php echo $instance['calllinktitle'] ?>">
 				<p class="call-text"> <?php echo $instance['calltext']; ?> : <?php echo $instance['callnumber'] ?></p>
 
@@ -74,7 +73,7 @@ function cnw_register_widget() {
 	<div>
 		<div class="sms-now-mobile">
 			<a href="sms:<?php echo $instance['smsnumber'] ?>?&body=<?php echo $instance['smsbody'] ?>"
-				onclick="_gaq.push(['_trackEvent','call now module','Click/Touch/SMS','<?php echo $instance['smsnumber'] ?>',1]);"
+				onclick="gtag('event', 'sms_now_click', {'event_category': 'engagement','event_label': '<?php echo $instance['smsnumber'] ?>'});"
 				class="call-link" title="<?php echo $instance['calllinktitle'] ?>">
 				<p class="call-text"> <?php echo $instance['calltext']; ?> </p>
 				<div class="sms-img-circle"></div>
